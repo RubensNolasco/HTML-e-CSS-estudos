@@ -46,7 +46,7 @@ a{
 }
 .cabecalho__menu__link{
     font-family: var(--text-font);
-    font-size:24px;
+    font-size:1.5rem;
     font-weight: 600px;
     color:#22D4FD;
     text-decoration: none;
@@ -67,7 +67,7 @@ a{
 .apresentacao__sub{
     font-family: var(--title-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .apresentacao__links{
     color: var(--link-color);
@@ -75,7 +75,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-size:24px;
+    font-size:1.5rem;
     gap:32px;
 }
 .apresentacao__links__link{
@@ -85,10 +85,12 @@ a{
     align-items: center;
     justify-content:center;
     gap: 16px;
+    text-align: center;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
     font-family: var(--text-font);
     color:var(--link-color);
-    width: 378px;
-    height: 79px;
+    width: 50%;
     text-decoration: none;
     font-weight: 600;
 }
@@ -102,32 +104,32 @@ a{
     justify-content: space-between;
     display:flex;
     align-items:center;
+    gap:82px;
 }
 .icones{
     width: 32px;
     height: 32px;
 }
 .imagem{
-    width: 467.705px;
-    height: 532px;
+    width: 50%;
 }
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     gap: 40px;
     display:flex;
     flex-direction: column;
 }
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--title-font);
 }
 .apresentacao__conteudo__paragrafo{
-    font-size:24px;
+    font-size:1.5rem;
     font-family: var(--text-font);
 
 }
 .rodape{
-    font-size:24px;
+    font-size:1.5rem;
     font-family: var(--text-font);
     text-align:center;
     padding:12px;
@@ -135,4 +137,19 @@ a{
     background-color: #22D4FD;
     font-weight: 400;
 
+}
+@media(max-width: 1200px){
+  .apresentacao{
+    flex-direction:column-reverse;
+    padding: 5%;
+  }
+  .cabecalho{
+    padding: 10% 
+  }
+  .cabecalho__menu{
+    justify-content: center;
+  }
+  .apresentacao__conteudo{
+    width:auto;
+  }
 }
